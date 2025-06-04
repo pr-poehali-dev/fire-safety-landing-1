@@ -53,17 +53,32 @@ const Hero = () => {
           </div>
 
           <div className="relative">
-            <img
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop"
-              alt="Системы пожарной безопасности"
-              className="rounded-lg shadow-2xl"
-            />
-            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Инженер обслуживает систему пожаротушения"
+                className="w-full h-[400px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+
+            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-lg">
               <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium text-slate-700">
-                  Системы под контролем
-                </span>
+                <div className="bg-green-100 p-2 rounded-lg">
+                  <Icon
+                    name="CheckCircle"
+                    className="text-green-600"
+                    size={20}
+                  />
+                </div>
+                <div>
+                  <p className="font-semibold text-slate-800">
+                    Система проверена
+                  </p>
+                  <p className="text-sm text-slate-500">
+                    Соответствует требованиям МЧС
+                  </p>
+                </div>
               </div>
             </div>
           </div>
